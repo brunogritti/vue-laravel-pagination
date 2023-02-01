@@ -1,10 +1,12 @@
 <template>
 <div class="btn-paginate">
+    <!-- Fazer v-if pra ocultar essa seção -->
     <small> Mostrando {{from}} - {{to}} de {{total}} encontrados.</small>
-    <button class="btn" :disabled="from != 1"
+    <!-- Fazer classe dinamica com props -->
+    <button class="btn" :disabled="from == 1"
         @click="prevPage">&laquo; Anterior
     </button>
-    <button class="btn" :disabled="to != total"
+    <button class="btn" :disabled="to == total"
         @click="nextPage">Próximo &raquo;
     </button>
 </div>
@@ -23,12 +25,12 @@ export default {
     methods: {
         prevPage: function(){
             this.page--;
-            this.$emit('previous');
+            this.$emit('page-changed');
         },
 
         nextPage: function(){
             this.page++;
-            this.$emit('next');
+            this.$emit('page-changed');
         },
         
         setPage: function(page){
