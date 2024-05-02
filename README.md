@@ -1,15 +1,19 @@
 ## Vue pagination for Laravel
 
-> A Laravel Paginator for vue2 components
-
+> A Laravel Paginator for vue3 components
 
 # Installation
+
+### Obs
+
+To Vue2, use branch ```main```\
+To Vue2, use branch ```vue3```
 
 ## npm
 
 ```
 
-npm install vue2-laravel-custom-pagination
+npm install vue3-laravel-custom-pagination
 
 ```
 
@@ -18,7 +22,7 @@ npm install vue2-laravel-custom-pagination
 
 ```$xslt
 
-import Pagination from 'vue2-laravel-custom-pagination'
+import Pagination from 'vue3-laravel-custom-pagination'
 
 ```
 
